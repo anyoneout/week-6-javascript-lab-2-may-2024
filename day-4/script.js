@@ -17,9 +17,11 @@ function partOneA () {
 function partOneB () {
   alert("Try it!");
   // 1. Create a for loop.
-
+  let highNumber = 7;
     // 2. give the user and alert with the current number.
-
+  for (let i=0; i <highNumber; i++) {
+    alert(`the number is ${i}`);
+  }
 }
 
 // Example
