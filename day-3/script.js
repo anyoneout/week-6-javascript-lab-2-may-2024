@@ -21,10 +21,15 @@ function partOneB () {
   let friends 
   friends = [];
   // 1. TODO: Add your own friends to the array
-
+  friends[0] = "Jane";
+  friends[1] = "Swedgin";
+  friends[2] = "Lily";
+  friends[3] = "Tawook";
+  friends[4] = "Mazikeen";
   // 2. TODO: write your friends to the message
+  messageParagraph.innerHTML = `Your friends are ${friends[0]}, ${friends[1]}, ${friends[2]}, ${friends[3]}, and ${friends[4]}.`
 
-}
+} 
 
 // Example
 // use += to add to the message
@@ -51,8 +56,18 @@ function partTwoA () {
 function partTwoB () {
   let friends = [];
   // 1. Add your friends to the array
-
+  friends[0] = "Manny";
+  friends[1] = "Moe";
+  friends[2] = "Jack";
+  friends[3] = "Jill";
+  friends[4] = "Hill";
   // 2. write your friends to the innerHTML of the document
+  messageParagraph.innerHTML = "Your friends are ";
+  messageParagraph.innerHTML += `${friends[0]}`;
+  messageParagraph.innerHTML += `, ${friends[1]}`;
+  messageParagraph.innerHTML += `, ${friends[2]}`;
+  messageParagraph.innerHTML += `, ${friends[3]}`;
+  messageParagraph.innerHTML += `, ${friends[4]}`;
 
 }
 
@@ -70,8 +85,9 @@ function partThreeA () {
 // Try prompting for a friend with a slightly different prompt or writing the message in a slightly different format.
 function partThreeB () {
   // 1. prompt for a friend
-
+  let friend = prompt("Please enter a name of a friend.");
   // 2. add the friend to the message
+  messageParagraph.innerHTML += `This is your friend's name ${friend}!`;
 }
 
 // Example
