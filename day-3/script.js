@@ -120,12 +120,12 @@ function partFourB () {
   totalFavFlavors = myFavFlavors.length;
 
   // 1. prompt for a flavor
-
+  newFavFlavor = prompt(`You have ${totalFavFlavors} favorite flavors of ice cream. To add another enter a flavor.`)
   // 2. add the flavor to the array with push()
-
+  myFavFlavors.push(newFavFlavor);
   // 3. add the flavor to the message
-
+  messageList.innerHTML += `<li>${newFavFlavor}</li>`;
   // 4. log the array to the console for debugging
-
+  console.log(myFavFlavors);
 }
 
